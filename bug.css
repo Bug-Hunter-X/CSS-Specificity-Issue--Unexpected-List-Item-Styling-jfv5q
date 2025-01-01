@@ -1,0 +1,7 @@
+The following CSS rule is intended to style all list items within an unordered list, but it only affects the first list item:
+
+```css
+ul li { color: blue; }
+```
+
+This happens because the selector `ul li` is too specific when combined with other selectors within your stylesheet.  If you have another, more specific rule targeting `ul li` (for example, applying styles to a specific `<li>` or class within the `<ul>`), it may override this general style, affecting only the first `<li>` where both selectors match.
